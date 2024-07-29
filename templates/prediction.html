@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: hsl(187, 73%, 20%);
+      font-family: Arial, sans-serif;
+    }
+
+    h3 {
+      text-align: center;
+      color: hsl(251, 61%, 51%);
+    }
+
+    h4 {
+      text-align: center;
+      color: hsl(182, 89%, 19%);
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .result-box, .predicted-box {
+      background-color: hsl(166, 24%, 89%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .predicted-box {
+      background-color: hsl(277, 31%, 95%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Web3 Defense Hub  --Abhishek Singh</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-lg-12">
+    <div class="image-container">
+        <img src="figs/phisheye.png" alt="Phisheye Image">
+      </div>
+      
+    </div>
+
+    <div class="col-lg-12">
+      <div class="result-box">
+        <h4>Message entered :</h4>
+        <h4>{{message}}</h4><br>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="predicted-box">
+        <h3>Predicted Label : {{pred}}</h3>
+        <h3>This is likely{{is_phising}} a phishing message.</h3>
+        <h4>Model used is : {{model_name}}</h4>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

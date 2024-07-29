@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: rgb(163, 121, 222); /* Changed background color */
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: hsla(322, 58%, 63%, 0.368);
+      margin-top: 20px;
+      font-weight: bold; /* Made bold */
+      font-size: 2.5em; /* Increased font size */
+      background-color: hsl(0, 0%, 100%); /* Purple background */
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    h4 {
+      text-align: center;
+      color: hsl(300, 52%, 29%); /* Changed color */
+      font-size: 1.2em; /* Changed font size */
+    }
+
+    .container {
+      margin-top: 50px;
+      text-align: center; /* Center the content */
+    }
+
+    .form-container {
+      background-color: hsl(166, 24%, 89%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid hsl(210, 71%, 78%);
+      font-size: 14pt;
+    }
+
+    .btn-success {
+      background-color: hsl(295, 47%, 65%); /* Changed color */
+      border-color: hsl(156, 47%, 71%);
+      font-size: 14pt;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .btn-success:hover {
+      background-color: hsl(239, 35%, 56%); /* Changed color */
+      border-color: hsl(168, 3%, 36%);
+    }
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Web3 Defense Hub  --Abhishek Singh</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-lg-12">
+    <div class="image-container">
+        <img src="figs/phisheye.png" alt="Phisheye Image">
+      </div>
+      <h1><strong>WEB3 PHISHING DETECTION APP</strong></h1>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="form-container">
+        <form class="form-inline" action="/predict" method="post" enctype="multipart/form-data">
+          <h4>Enter your message here:</h4>
+          <textarea rows="6" name="message"></textarea><br><br>
+          <center>
+            <input type="submit" class="btn btn-success" value="Predict">
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
