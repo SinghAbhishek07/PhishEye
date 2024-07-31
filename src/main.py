@@ -1,33 +1,3 @@
-# try:
-#     from read_dataset import read_raw_data, train_dataset
-#     from training import train_baselines, train_llms
-# except ImportError:
-#     from src.read_dataset import read_raw_data, train_dataset
-#     from src.training import train_baselines, train_llms
-
-
-# # Reading raw data
-# raw_file_path = 'dataset/emails.csv'
-# raw_df = read_raw_data(raw_file_path)
-# print(raw_df.head())
-
-# # Preprocessing and spliting the dataset
-# (trained_dataset, test_dataset), tokenizer, class_weights = train_dataset(raw_df, label_col_name="spam", text_col_name="text", train_size=0.8)
-
-# # Printing datasets for verification
-# print("Training Dataset:")
-# print(trained_dataset)
-# print("Test Dataset:")
-
-# print(test_dataset)
-
-# # Training baseline models
-# train_baselines(trained_dataset, test_dataset, label_col_name="spam", text_col_name="text")
-
-# # Training LLM(Used- Distilbert)
-# train_llms(trained_dataset, test_dataset, tokenizer, class_weights, label_col_name="spam", text_col_name="text")
-
-
 import argparse
 
 try:
