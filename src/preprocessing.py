@@ -39,6 +39,11 @@ def preprocess_data(df, text_column, label_column, test_size=0.2, max_length=128
     # Clean text
     df[text_column] = df[text_column].apply(clean_text)
     
+    # Ensure labels are numeric
+    if not pd.api.types.is_numeric_dtype(df[label_column]):
+        raise ValueError(f"Label column '{label_column}' contains non-numeric values.")
+    
+
     # Convert labels to integers
     df[label_column] = df[label_column].astype(int)
     
