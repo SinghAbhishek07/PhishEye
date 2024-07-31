@@ -1,16 +1,11 @@
-
-
 <p align="center">
     <img src="src/figs/phisheye.png" />
 </p>
-
 
 ## Introduction
 PhishEYE aims to safeguard Web3 users by detecting and preventing phishing attacks that target their seed phrases and sensitive information. Leveraging a spam email dataset, PhishEYE utilizes both baseline machine learning models and advanced Large Language Model (LLM) techniques, specifically DistilBERT, to accurately identify and flag deceptive and fraudulent phishing messages.
 
 This project focuses on classifying text messages into two categories: spam (1) and not spam (0). To achieve this, several machine learning models are trained using a CSV dataset containing a total of 5726 messages. Among these, 1368 messages are classified as spam (1), and 4358 messages are classified as not spam (0).
-
-
 
 <p align="center">
     <br />
@@ -22,30 +17,29 @@ This project focuses on classifying text messages into two categories: spam (1) 
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Pre-requisites">Pre-requisites</a>
+      <a href="#pre-requisites">Pre-requisites</a>
     </li>
     <li>
-      <a href="#Installations">Installations</a>
+      <a href="#installations">Installations</a>
       <ul>
-        <li><a href="#Windows">Windows</a></li>
-        <li><a href="#Mac">Mac</a></li>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#mac">Mac</a></li>
       </ul>
     </li>
     <li>
-      <a href="#Code Repo">Code Repo</a>
+      <a href="#code-repo">Code Repo</a>
     </li>
-    <li><a href="#Data Source">Data Source</a></li>
+    <li><a href="#data-source">Data Source</a></li>
     <li>
-       <a href="#Models Metric Benchmarks">Models Metric Benchmarks</a>
+       <a href="#model-metric-benchmarks">Model Metric Benchmarks</a>
     </li>
-    <li><a href="#Pipeline">Pipeline</a></li>
-    <li><a href="#Demo">Demo</a></li>
-    <li><a href="#License">License</a></li>
+    <li><a href="#pipeline">Pipeline</a></li>
+    <li><a href="#demo-visual">Demo Visual</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
 ## Pre-requisites
-
 
 This file includes the requirements, as well as the steps you need to follow to run the PhishEye Flask app.
 
@@ -59,9 +53,9 @@ This file includes the requirements, as well as the steps you need to follow to 
 
 ## Installations
 
-### Installing Python 3.11 and Upgrading pip
+### Windows
 
-#### Windows
+#### Installing Python 3.11 and Upgrading pip
 1. **Download and Install Python 3.11:**
    - Download the installer from the [official Python website](https://www.python.org/downloads/).
    - Run the installer and follow the instructions.
@@ -117,7 +111,7 @@ This file includes the requirements, as well as the steps you need to follow to 
      ```sh
      docker run -p 5000:5000 phisheye python app.py --model_type baseline
      ```
-### Running the Application locally without Docker
+#### Running the Application locally without Docker
 
    **Before running below code make sure you are outside scr folder(cd..)**
 
@@ -126,7 +120,7 @@ This file includes the requirements, as well as the steps you need to follow to 
    ```
 
 
-#### Mac
+### Mac
 
 1. **Install Python 3.11**:
    - Download and install Python 3.11 from the [official website](https://www.python.org/downloads/).
