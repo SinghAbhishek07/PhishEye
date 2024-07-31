@@ -14,7 +14,7 @@ This project focuses on classifying text messages into two categories: spam (1) 
 
 <p align="center">
     <br />
-    <a href="src/figs/Demo.gif">View Demo</a>
+    <a href="src/figs/demo.gif">View Demo</a>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -86,7 +86,11 @@ This file includes the requirements, as well as the steps you need to follow to 
    pip install -r requirements.txt
    ```
 
-6. **Run the main file**:
+6. **Change directory to go to src folder**:
+   ```sh
+   cd src
+   ```
+7. **Run the main file**:
    - For LLM:
      ```sh
      python main.py --model_type LLM
@@ -96,23 +100,30 @@ This file includes the requirements, as well as the steps you need to follow to 
      python main.py --model_type baseline
      ```
 
-7. **Install Docker**:
+8. **Install Docker**:
    - Download and install Docker from the [official website](https://www.docker.com/products/docker-desktop).
 
-8. **Build Docker image**:
+9. **Build Docker image**:
    ```sh
-   docker build -t phisheye .
+   docker build -f Dockerfile -t phisheye .
    ```
 
-9. **Run Docker container**:
+10. **Run Docker container**:
    - For LLM:
      ```sh
-     docker run -p 5000:5000 phisheye --model_type LLM
+     docker run -p 5000:5000 phisheye python app.py --model_type LLM
      ```
    - For Baseline:
      ```sh
-     docker run -p 5000:5000 phisheye --model_type baseline
+     docker run -p 5000:5000 phisheye python app.py --model_type baseline
      ```
+### Running the Application locally without Docker
+
+   **Before running below code make sure you are outside scr folder(cd..)**
+     ```sh
+     python app.py --model_type LLM # or --model_type baseline
+     ```
+
 
 #### Mac
 
@@ -138,8 +149,12 @@ This file includes the requirements, as well as the steps you need to follow to 
    ```sh
    pip install -r requirements.txt
    ```
+6. **Change directory to go to src folder**:
+   ```sh
+   cd src
+   ```
 
-6. **Run the main file**:
+7. **Run the main file**:
    - For LLM:
      ```sh
      python main.py --model_type LLM
@@ -149,24 +164,26 @@ This file includes the requirements, as well as the steps you need to follow to 
      python main.py --model_type baseline
      ```
 ### Running the Application on Docker
-7. **Install Docker**:
+8. **Install Docker**:
    - Download and install Docker from the [official website](https://www.docker.com/products/docker-desktop).
 
-8. **Build Docker image**:
+9. **Build Docker image**:
    ```sh
-   docker build -t phisheye .
+   docker build -f Dockerfile -t phisheye .
    ```
 
-9. **Run Docker container**:
+10. **Run Docker container**:
    - For LLM:
      ```sh
-     docker run -p 5000:5000 phisheye --model_type LLM
+     docker run -p 5000:5000 phisheye python app.py --model_type LLM
      ```
    - For Baseline:
      ```sh
-     docker run -p 5000:5000 phisheye --model_type baseline
+     docker run -p 5000:5000 phisheye python app.py --model_type baseline
      ```
 ### Running the Application locally without Docker
+
+   **Before running below code make sure you are outside scr folder(cd..)**
      ```sh
      python app.py --model_type LLM # or --model_type baseline
      ```

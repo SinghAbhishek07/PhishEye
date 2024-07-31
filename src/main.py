@@ -61,7 +61,7 @@ def main(training_type):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train models based on the specified type.")
-    parser.add_argument('--type', choices=['LLM', 'baseline'], required=True, help="Type of model to train: 'LLM' or 'baseline'")
+    parser.add_argument('--model_type', choices=['LLM', 'baseline'], required=True, help="Type of model to train: 'LLM' or 'baseline'")
     args = parser.parse_args()
 
-    main(args.type)
+    main(args.model_type)
