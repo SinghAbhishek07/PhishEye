@@ -22,24 +22,24 @@ This project focuses on classifying text messages into two categories: spam (1) 
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Pre-requisites">Features</a>
+      <a href="#Pre-requisites">Pre-requisites</a>
     </li>
     <li>
-    <li>
-      <a href="#Installations">Installation</a>
+      <a href="#Installations">Installations</a>
       <ul>
-        <li><a href="#Window">Architecture</a></li>
-        <li><a href="#Mac">ETL Process</a></li>
+        <li><a href="#Windows">Windows</a></li>
+        <li><a href="#Mac">Mac</a></li>
       </ul>
     </li>
-      <a href="#Code Repo">Installation</a>
-    </li>
-    <li><a href="#Data Source">Data</a></li>
     <li>
-       <a href="#Models Metric Benchmarks">Components</a>
+      <a href="#Code Repo">Code Repo</a>
     </li>
-    <li><a href="#Pipeline">app.py</a></li>
-    <li><a href="#Demo">Usage</a></li>
+    <li><a href="#Data Source">Data Source</a></li>
+    <li>
+       <a href="#Models Metric Benchmarks">Models Metric Benchmarks</a>
+    </li>
+    <li><a href="#Pipeline">Pipeline</a></li>
+    <li><a href="#Demo">Demo</a></li>
     <li><a href="#License">License</a></li>
   </ol>
 </details>
