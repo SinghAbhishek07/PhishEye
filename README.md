@@ -173,32 +173,33 @@ This file includes the requirements, as well as the steps you need to follow to 
 
 ## Code Repo
 
-
-├── src/
-│   ├── dataset/
-│   │   └── emails.csv
-│   ├── figs/
-│   │   └── phisheye.png
-│   ├── outputs/
-│   │   ├── model/
-│   │   └── scores/
-│   │       ├── baseline_experiment.csv
-│   │       └── llm_experiment.csv
-│   ├── init.py
-│   ├── evaluation_tools.py
-│   ├── inference.py
-│   ├── main.py
-│   ├── preprocessing.py
-│   ├── read_dataset.py
-│   ├── training.py
-├── templates/
-│   ├── index.html
-│   └── prediction.html
-├── .gitignore
-├── app.py
-├── Dockerfile
-├── README.md
-└── requirements.txt
+```plaintext
+src/
+├── dataset/
+│   └── emails.csv
+├── figs/
+│   └── phisheye.png
+├── outputs/
+│   ├── model/
+│   └── scores/
+│       ├── baseline_experiment.csv
+│       └── llm_experiment.csv
+├── __init__.py
+├── evaluation_tools.py
+├── inference.py
+├── main.py
+├── preprocessing.py
+├── read_dataset.py
+├── training.py
+templates/
+├── index.html
+└── prediction.html
+.gitignore
+app.py
+Dockerfile
+README.md
+requirements.txt
+```
 
 
 
@@ -230,7 +231,7 @@ The downloaded dataset you can find in the `src/dataset/emails.csv` directory.
 ## Pipeline
 <p align="center">
     <img src="src/figs/TrainInfer.png" alt="Train and Infer Pipeline" />
-    <img src="src/figs/workflow_pipeline.png" alt="Workflow Pipeline" />
+    <img src="src/figs/Workflow_Pipeline.png" alt="Workflow Pipeline" />
 </p>
 
 ## Demo Visual
@@ -238,6 +239,7 @@ The downloaded dataset you can find in the `src/dataset/emails.csv` directory.
     <img src="src/figs/front_page.png" alt="Front Page" />
     <img src="src/figs/predict.png" alt="Prediction Page" />
 </p>
+
 ## License
 
 <details>
