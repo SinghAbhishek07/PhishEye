@@ -120,6 +120,7 @@ This file includes the requirements, as well as the steps you need to follow to 
 ### Running the Application locally without Docker
 
    **Before running below code make sure you are outside scr folder(cd..)**
+   
      ```sh
      python app.py --model_type LLM # or --model_type baseline
      ```
@@ -184,6 +185,7 @@ This file includes the requirements, as well as the steps you need to follow to 
 ### Running the Application locally without Docker
 
    **Before running below code make sure you are outside scr folder(cd..)**
+
      ```sh
      python app.py --model_type LLM # or --model_type baseline
      ```
