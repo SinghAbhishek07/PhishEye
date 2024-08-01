@@ -191,7 +191,14 @@ src/
 ├── dataset/
 │   └── emails.csv
 ├── figs/
+│   └── demo.png
+│   └── Example2.png
+│   └── front_page.png
 │   └── phisheye.png
+│   └── predict.png
+│   └── predict2.png
+│   └── TrainInfer.png
+│   └── Workflow_Pipleline.png
 ├── outputs/
 │   ├── model/
 │   └── scores/
@@ -244,13 +251,23 @@ The downloaded dataset you can find in the `src/dataset/emails.csv` directory.
 ## Pipeline
 <p align="center">
     <img src="src/figs/TrainInfer.png" alt="Train and Infer Pipeline" />
+    <br>
+    <span>Figure 1: Train and Infer Pipeline</span>
+    <br><br>
     <img src="src/figs/Workflow_Pipeline.png" alt="Workflow Pipeline" />
+    <br>
+    <span>Figure 2: Workflow of PhishEye</span>
 </p>
 
 ## Demo Visual
 <p align="center">
     <img src="src/figs/front_page.png" alt="Front Page" />
+    <br>
+    <span>Figure 3: Front_page of the app</span>
+    <br><br>
     <img src="src/figs/predict.png" alt="Prediction Page" />
+    <br>
+    <span>Figure 4: Prediction Page</span>
 </p>
 
 ## License
